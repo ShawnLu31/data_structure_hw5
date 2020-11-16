@@ -1,3 +1,4 @@
+#### F74086072 呂文翔
 # data_structure_hw5
 ## Result screenshot
 * compile
@@ -7,6 +8,8 @@
 * comparison
 ![image](https://github.com/ShawnLu31/data_structure_hw5/blob/main/diff.JPG)
 ## Program structure
+* 流程圖:
+![image](https://github.com/ShawnLu31/data_structure_hw5/blob/main/structure.JPG)
 ## Program functions
 * Define:  
 ```c
