@@ -9,15 +9,39 @@
 ## Program structure
 ## Program functions
 * Define:  
-   TABLE_SIZE = 13  
-   PRIME = 7
-   
+```c
+#define TABLE_SIZE 13  
+#define PRIME 7
+```
+* variable:
+   * int *hash_table - 
+      1. the poniter to array of hash table.  
+      2. it restores keys.
+   * int *check_list - 
+      1. the pointer to array.  
+      2. This is for recording that the bucket of hash_table is empty or used.  
+      3. 0 mean empty, 1 mean this bucket is used.  
+   * int key - the inptu key.
+   * int index - the result of hashed key.
+* Description:  
+   * main hash function: (hash1(key) + i*hash2(key)) % TABLE_SIZE
+```c
+for(int i = 0; i < TABLE_SIZE; i++)
+{
+    index = (hash1(key) + i * hash2(key)) % TABLE_SIZE;
+		if(*(check_list + index) == 0){
+				*(hash_table + index) = key;
+				*(check_list + index) = 1;
+				break;
+		}
+}
+```
 1. in main function
    * parameter:
 2. hash1(int key)
    * parameter:
       * key - the input key value.
-   * retirn:  
+   * return:  
     ```c
     return key % TABLE_SIZE;
     ```
