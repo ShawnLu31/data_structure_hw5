@@ -13,12 +13,13 @@
 #define TABLE_SIZE 13  
 #define PRIME 7
 ```
+1. in main function:
 * variable:
-   * int *hash_table - 
-      1. the poniter to array of hash table.  
-      2. it restores keys.
-   * int *check_list - 
-      1. the pointer to array.  
+	* int *hash_table - 
+      		1. the poniter to array of hash table.  
+      		2. it restores keys.
+   	* int *check_list - 
+1. the pointer to array.  
       2. This is for recording that the bucket of hash_table is empty or used.  
       3. 0 mean empty, 1 mean this bucket is used.  
    * int key - the inptu key.
@@ -36,8 +37,6 @@ for(int i = 0; i < TABLE_SIZE; i++)
 		}
 }
 ```
-1. in main function
-   * parameter:
 2. hash1(int key)
    * parameter:
       * key - the input key value.
