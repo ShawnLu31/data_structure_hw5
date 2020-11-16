@@ -14,10 +14,10 @@
 #define PRIME 7
 ```
 * variable:
-   * int *hash_table - the poniter to array of hash table.  
-                        it restores keys.
-   * int *check_list - 1. the pointer to array. 
-                       2. This is for recording that the bucket of hash_table is empty or used.
+   * int *hash_table - 1. the poniter to array of hash table.  
+                       2. it restores keys.
+   * int *check_list - 1. the pointer to array.  
+                       2. This is for recording that the bucket of hash_table is empty or used.  
                        3. 0 mean empty, 1 mean this bucket is used.  
    * int key - the inptu key.
    * int index - the result of hashed key.
