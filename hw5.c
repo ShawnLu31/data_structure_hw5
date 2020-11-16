@@ -32,6 +32,7 @@ int main(){
 	}
 	Print(hash_table);
 	free(hash_table);
+	free(check_list);
 	return 0;
 }
 
