@@ -5,7 +5,7 @@
 
 int hash1(int key);
 int hash2(int key);
-void Print(int table[]);
+void Print(int *table);
 
 int main(){
 	//table bucket
